@@ -31,6 +31,11 @@
     color: #2E2F42;
 }
 
+.menu-link:hover,
+.menu-link:focus {
+    color: #404BBF;
+}
+
 .contact-email {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
