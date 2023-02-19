@@ -61,9 +61,14 @@
 .contact-phone-number {
     font-weight: 400;
     color: var(--primary-text-color);
+    font-style: normal;
 }
 
 /*HERO*/
+
+.hero {
+    background-color: var(--primary-title-color);
+}
 
 .page-hero {
     font-size: 56px;
@@ -130,6 +135,10 @@
 
 /*FOOTER*/
 
+.footer {
+    background-color: var(--primary-title-color);
+}
+
 .footer p {
     font-weight: 400;
     color: var(--color-footer-p);
@@ -151,12 +160,11 @@
     font-weight: 500;
     letter-spacing: 0.04em;
     color: var(--color-logo-web);
-    background: var(--color-footer-p);
     cursor: pointer;
 }
 
-.menu-btn:hover,
-.menu-btn:focus {
+.btn:hover,
+.btn:focus {
     color: var(--color-text-hero);
     background-color: var(--color-btn-hover);
 }
