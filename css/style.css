@@ -1,12 +1,11 @@
 :root {
-    --primary-text-color: #434455;
-    --primary-title-color: #2E2F42;
-    --primary-white-color: #E5E5E5;
-    --color-logo-web: #4D5AE5;
-    --color-btn-hover: #404BBF;
-    --color-text-hero: #ffffff;
-    --color-footer-p: #E7E9FC;
-    --color-footer-logotype: #F4F4FD;
+    --primary-text-color-slate: #434455;
+    --color-navy-blue: #2E2F42;
+    --primary-color-white: #ffffff;
+    --color-iris: #4D5AE5;
+    --color-ocean: #404BBF;
+    --color-copnflower: #E7E9FC;
+    --color-cloud: #F4F4FD;
 }
 
 .body {
@@ -15,8 +14,6 @@
     letter-spacing: 0.02em;
     line-height: 1.5;
     background: var(--primary-white-color);
-    color: var(--primary-text-color);
-    color: var(--primary-title-color);
 }
 
 .list {
@@ -36,16 +33,16 @@
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-logo-web);
+    color: var(--color-iris);
 }
 
 .logotype {
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
 .menu-link {
     font-weight: 500;
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
 .menu-link:hover,
@@ -54,12 +51,11 @@
 .contact-email:focus,
 .contact-phone-number:hover,
 .contact-phone-number:focus {
-    color: var(--color-btn-hover);
+    color: var(--color-iris);
 }
 
 .contact-email,
 .contact-phone-number {
-    font-weight: 400;
     color: var(--primary-text-color);
     font-style: normal;
 }
@@ -67,19 +63,29 @@
 /*HERO*/
 
 .hero {
-    background-color: var(--primary-title-color);
+    background-color: var(--color-navy-blue);
 }
 
 .page-hero {
     font-size: 56px;
     line-height: 1.07;
-    background-color: var(--primary-title-color);
-    color: var(--color-text-hero);
+    font-weight: 700;
+    color: var(--primary-color-white);
 }
 
 .btn-page-hero {
-    background: var(--color-logo-web);
-    color: var(--color-text-hero);
+    background: var(--color-iris);
+    color: var(--primary-color-white);
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.btn-page-hero:hover,
+.btn-page-hero:focus {
+    background-color: var(--color-ocean);
 }
 
 /*WORK PRINCIPLES*/
@@ -97,20 +103,23 @@
     overflow: hidden;
 }
 
-.page-work-prin > h3 {
+.page-work-prin .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
-.page-work-prin > p {
-    font-weight: 400;
-    color: var(--primary-text-color);
+.page-work-prin .text {
+    color: var(--primary-text-color-slate);
 }
 
 /*WHAT DOING*/
 /*OUR TEAM*/
+
+.bgr-our-team {
+    background-color: #F4F4FD;
+}
 
 .page-title-what,
 .page-title-team {
@@ -118,36 +127,32 @@
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
-.page-our-team-ul h3 {
+.page-our-team .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
-.page-our-team-ul p {
-    font-weight: 400;
-    color: var(--primary-text-color);
+.page-our-team .text {
+    color: var(--primary-text-color-slate);
 }
 
 /*FOOTER*/
 
 .footer {
-    background-color: var(--primary-title-color);
+    background-color: var(--color-navy-blue);
 }
 
-.footer p {
-    font-weight: 400;
-    color: var(--color-footer-p);
-    background-color: var(--primary-title-color);
+.footer .text {
+    color: var(--color-copnflower);
 }
 
 .logotype-footer {
-    color: var(--color-footer-logotype);
-    background-color: var(--primary-title-color);
+    color: var(--color-cloud);
 }
 
 .footer .logo {
@@ -156,27 +161,31 @@
 
 /*PORTFOLIO-NAVIGATION*/
 
-.menu-btn {
+.menu-btn .btn {
     font-weight: 500;
     letter-spacing: 0.04em;
-    color: var(--color-logo-web);
+    color: var(--color-iris);
+    background-color: var(--color-cloud);
+    width: 116px;
+    height: 48px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-    color: var(--color-text-hero);
-    background-color: var(--color-btn-hover);
+    color: var(--primary-color-white);
+    background-color: var(--color-ocean);
 }
 
-.page-galery h2 {
+.page-galery .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--primary-title-color);
+    color: var(--color-navy-blue);
 }
 
-.page-galery p {
-    font-weight: 400;
-    color: var(--primary-text-color);
+.page-galery .text {
+    color: var(--primary-text-color-slate);
 }
